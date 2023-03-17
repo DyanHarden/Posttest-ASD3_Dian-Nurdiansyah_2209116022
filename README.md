@@ -88,3 +88,9 @@ Program ini menggunakan beberapa library yaitu time dan os. Library time digunak
 ![Screenshot 2023-03-17 144001](https://user-images.githubusercontent.com/94899238/225838027-d9158cc6-0a3b-410a-a76e-2ae6de24a0a8.png)
 - Jika pengguna (admin) menginput pilihan kedua, maka program akan mengarahkan ke menu menghapus data barang di antrian. Disini program menampilkan data barang yang sudah ada di antrian agar memudahkan admin memilih data mana yang perlu dihapus, untuk menghapus suatu data barang pengguna cukup menginput nama dari data yang sudah ada secara baik dan benar.
 
+![Screenshot 2023-03-17 144026](https://user-images.githubusercontent.com/94899238/225839039-90209a4b-8fe0-468f-8303-401e87d03fe2.png)
+- Jika pengguna (admin) menginput pilihan ketiga, maka program akan menampilkan data yang sudah ada di antrian.
+
+![Screenshot 2023-03-17 145752](https://user-images.githubusercontent.com/94899238/225846501-c9199dd9-3e3a-4390-bd30-f3935a2a7b61.png)
+![Screenshot 2023-03-17 145808](https://user-images.githubusercontent.com/94899238/225846908-e655be14-f4f1-456a-84ba-efc9bc7363f2.png)
+- Jika pengguna (admin) menginput pilihan ketiga, maka program akan mengarahkan penggunna menuju menu merubah data yang sudah ada di dalam antrian. Disini program kembali menampilkan list antrian yang telah tersedia di antrian, setelah itu program meminta pengguna menginput nama dari data yang telah ada dan yang diinginkan untuk dirubah datanya secara baik dan benar agar program dapat berjalan dengan benar.
