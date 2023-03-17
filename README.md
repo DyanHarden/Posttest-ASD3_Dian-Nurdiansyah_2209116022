@@ -76,3 +76,5 @@ Program akan menampilkan menu dengan beberapa pilihan seperti tambah barang, hap
 - Jika user memilih selain pilihan 1-5, program akan menampilkan pesan bahwa menu tidak ditemukan dan user akan diminta memilih kembali menu yang tersedia.
 
 Program ini menggunakan beberapa library yaitu time dan os. Library time digunakan untuk menambahkan delay pada program agar tampilan menu tidak terlalu cepat, sedangkan library os digunakan untuk membersihkan layar setelah user memilih suatu pilihan menu.
+
+# Output yang Dihasilkan
