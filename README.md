@@ -44,3 +44,31 @@ Program ini juga menggunakan modul os dan time. Modul os digunakan untuk members
 
 ![hapus barang](https://user-images.githubusercontent.com/94899238/225825511-35cbd3a1-cb67-40d7-b3da-bb6ba5146452.png)
 - Baris kode tersebut adalah untuk membuat fungsi hapus_barang(), yang digunakan untuk menghapus objek Barang dari Antrian berdasarkan nama. Jika Antrian masih kosong, maka akan ditampilkan pesan "Antrian kosong". Jika elemen pertama di Antrian memiliki nama yang sama dengan nama yang dihapus, maka elemen pertama akan dihapus. Jika tidak, maka Antrian akan diiterasi dari elemen kedua hingga elemen terakhir. Jika nama Barang ditemukan, maka Barang akan dihapus. Jika tidak, akan ditampilkan pesan "Barang tidak ditemukan".
+
+![lihat antrian](https://user-images.githubusercontent.com/94899238/225825800-92d1b28b-ff49-4927-9cf2-b8589817e89c.png)
+- Baris kode program di atas digunakan untuk menampilkan detail setiap node di dalam antrian. Fungsi lihat_antrian akan mengecek apakah head antrian kosong atau tidak. Jika head kosong, maka akan menampilkan pesan bahwa antrian kosong dan langsung keluar dari fungsi menggunakan pernyataan return.
+
+Jika head tidak kosong, maka fungsi akan mengiterasi dari head ke tail dan menampilkan detail setiap node. Setiap detail node seperti nama barang, pengirim, penerima, berat, dan tujuan akan ditampilkan menggunakan pernyataan print. Setiap detail node juga akan dipisahkan dengan garis pemisah "===========================================".
+
+![rubah barang](https://user-images.githubusercontent.com/94899238/225827345-e801ee9e-6f55-4bdd-998a-770133cc0f8b.png)
+- Baris program ini berguna untuk mengubah data barang dalam sebuah antrian. Pertama, program akan memeriksa apakah antrian kosong atau tidak. Jika kosong, program akan menampilkan pesan bahwa antrian kosong dan program akan menghentikan eksekusi. Jika tidak kosong, program akan mencari nama barang yang ingin diubah dengan cara melakukan iterasi dari head sampai tail. Jika nama barang ditemukan, program akan menampilkan pesan untuk mengubah data dan program akan meminta inputan dari pengguna untuk mengubah nama barang, pengirim, penerima, berat, dan alamat tujuan. Setelah itu, program akan menampilkan pesan bahwa perintah berhasil dan menghentikan eksekusi. Namun, jika nama barang tidak ditemukan, program akan menampilkan pesan kesalahan dan memanggil fungsi main() untuk kembali ke menu utama.
+
+![def main](https://user-images.githubusercontent.com/94899238/225827963-083c3921-970f-4090-9638-97c31a2926c4.png)
+- Baris program di atas adalah fungsi utama program yang berisi perulangan while True yang berjalan terus menerus sampai program dihentikan. Selain itu, fungsi ini juga membuat objek dari kelas Antrian yang digunakan untuk menyimpan data barang yang diinputkan oleh pengguna. Pada baris selanjutnya, program menampilkan menu pilihan yang terdiri dari lima pilihan yaitu Tambah Barang, Hapus Barang, Lihat Antrian, Merubah Data di Dalam Antrian, dan Keluar. Setelah menampilkan pilihan menu, program akan meminta input pilihan dari pengguna.
+
+![pilihan 1-5](https://user-images.githubusercontent.com/94899238/225828605-acbc7533-7d86-4c07-b2c2-e12a3485e033.png)
+Program akan menampilkan menu dengan beberapa pilihan seperti tambah barang, hapus barang, lihat antrian, ubah data barang, dan keluar dari program dan semua pilihan ini telah terintegrasi daripada fungsi yang ada di class barang dan class antrian.
+
+- Jika user memilih pilihan 1, program akan meminta input data barang seperti nama barang, pengirim, penerima, berat, dan tujuan. Data barang yang diinputkan akan disimpan dalam objek antrian menggunakan metode tambah_barang.
+
+- Jika user memilih pilihan 2, program akan menampilkan antrian barang yang ada dan meminta input nama barang yang akan dihapus. Nama barang yang diinputkan akan dihapus dari objek antrian menggunakan metode hapus_barang.
+
+- Jika user memilih pilihan 3, program akan menampilkan antrian barang yang ada menggunakan metode lihat_antrian.
+
+- Jika user memilih pilihan 4, program akan menampilkan antrian barang yang ada dan meminta input nama barang yang akan diubah. Jika nama barang ditemukan pada objek antrian, program akan meminta input data baru untuk barang tersebut dan melakukan perubahan data menggunakan metode rubah_barang.
+
+- Jika user memilih pilihan 5, program akan keluar dari perulangan dan program akan berhenti.
+
+- Jika user memilih selain pilihan 1-5, program akan menampilkan pesan bahwa menu tidak ditemukan dan user akan diminta memilih kembali menu yang tersedia.
+
+Program ini menggunakan beberapa library yaitu time dan os. Library time digunakan untuk menambahkan delay pada program agar tampilan menu tidak terlalu cepat, sedangkan library os digunakan untuk membersihkan layar setelah user memilih suatu pilihan menu.
