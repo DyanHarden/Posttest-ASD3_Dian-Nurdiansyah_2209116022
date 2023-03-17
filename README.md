@@ -19,13 +19,28 @@ Nim:  2209116022
 6. Ketika user memilih opsi rubah data di dalam antrian, program akan meminta user untuk menginput nama barang yang akan dirubah. Program akan mencari elemen dalam antrian dengan nama barang yang sama dan meminta user untuk menginput data baru untuk barang tersebut menggunakan metode rubah_barang. Program akan terus berjalan sampai user memilih opsi keluar dari program.
 
 # Fungsionalitas Program
-Program ini adalah aplikasi sederhana untuk mengelola antrian pengiriman barang. Program ini menggunakan OOP (Object Oriented Programming) dengan dua buah class yaitu Barang dan Antrian. Class Barang digunakan untuk membuat objek barang dengan properti nama, pengirim, penerima, berat, dan tujuan.
+Program ini adalah aplikasi sederhana untuk mengelola antrian pengiriman barang. Program ini menggunakan OOP (Object Oriented Programming) dengan dua buah class yaitu Barang dan Antrian. **Class Barang** digunakan untuk membuat objek barang dengan properti nama, pengirim, penerima, berat, dan tujuan.
 
-Class Antrian digunakan untuk mengelola antrian pengiriman barang. Class ini memiliki beberapa method, yaitu:
-tambah_barang: untuk menambahkan barang ke antrian.
-hapus_barang: untuk menghapus barang dari antrian berdasarkan nama barang.
-lihat_antrian: untuk melihat daftar barang dalam antrian.
-rubah_barang: untuk mengubah data barang dalam antrian.
-Fungsi main() adalah fungsi utama dari program. Fungsi ini membuat objek dari kelas Antrian dan memulai perulangan program yang menampilkan menu pilihan. Kemudian program akan meminta input dari user sesuai dengan pilihan yang dipilih. Setiap input akan memanggil salah satu method yang ada pada kelas Antrian untuk menambahkan, menghapus, melihat, atau mengubah data barang dalam antrian.
+**Class Antrian** digunakan untuk mengelola antrian pengiriman barang. Class ini memiliki beberapa method, yaitu:
+
+**tambah_barang**: untuk menambahkan barang ke antrian.
+
+**hapus_barang**: untuk menghapus barang dari antrian berdasarkan nama barang.
+
+**lihat_antrian**: untuk melihat daftar barang dalam antrian.
+
+**rubah_barang**: untuk mengubah data barang dalam antrian.
+
+**Fungsi main()** adalah fungsi utama dari program. Fungsi ini membuat objek dari kelas Antrian dan memulai perulangan program yang menampilkan menu pilihan. Kemudian program akan meminta input dari user sesuai dengan pilihan yang dipilih. Setiap input akan memanggil salah satu method yang ada pada kelas Antrian untuk menambahkan, menghapus, melihat, atau mengubah data barang dalam antrian.
 
 Program ini juga menggunakan modul os dan time. Modul os digunakan untuk membersihkan layar setiap kali user memilih menu tertentu. Sedangkan modul time digunakan untuk memberikan jeda sebelum program membersihkan layar.
+
+# Penjelasan Elemen-Elemen Penting dari Tiap Baris Program
+![class barang](https://user-images.githubusercontent.com/94899238/225825022-28c2990a-ac35-4396-973e-ece42eff99d7.png)
+- Baris kode tersebut adalah untuk mendefinisikan kelas Barang, yang memiliki properti nama, pengirim, penerima, berat, tujuan, dan next. Properti next ini berguna untuk menghubungkan objek Barang pada Antrian.
+
+![class antrian](https://user-images.githubusercontent.com/94899238/225825280-9e642e7b-b9e7-4c05-b439-1d932fec612e.png)
+- Baris kode tersebut adalah untuk mendefinisikan kelas Antrian, yang memiliki properti head. Properti head ini menunjukkan elemen pertama dari antrian. Fungsi tambah_barang() digunakan untuk menambahkan objek Barang ke dalam Antrian. Jika Antrian masih kosong (head == None), maka objek Barang akan menjadi head. Jika tidak, objek Barang akan ditambahkan sebagai elemen terakhir dari Antrian.
+
+![hapus barang](https://user-images.githubusercontent.com/94899238/225825511-35cbd3a1-cb67-40d7-b3da-bb6ba5146452.png)
+- Baris kode tersebut adalah untuk membuat fungsi hapus_barang(), yang digunakan untuk menghapus objek Barang dari Antrian berdasarkan nama. Jika Antrian masih kosong, maka akan ditampilkan pesan "Antrian kosong". Jika elemen pertama di Antrian memiliki nama yang sama dengan nama yang dihapus, maka elemen pertama akan dihapus. Jika tidak, maka Antrian akan diiterasi dari elemen kedua hingga elemen terakhir. Jika nama Barang ditemukan, maka Barang akan dihapus. Jika tidak, akan ditampilkan pesan "Barang tidak ditemukan".
