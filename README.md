@@ -37,10 +37,14 @@ Program ini juga menggunakan modul os dan time. Modul os digunakan untuk members
 
 # Penjelasan Elemen-Elemen Penting dari Tiap Baris Program
 ![class barang](https://user-images.githubusercontent.com/94899238/225825022-28c2990a-ac35-4396-973e-ece42eff99d7.png)
-- Baris kode tersebut adalah untuk mendefinisikan kelas Barang, yang memiliki properti nama, pengirim, penerima, berat, tujuan, dan next. Properti next ini berguna untuk menghubungkan objek Barang pada Antrian.
+- Baris kode tersebut adalah untuk mendefinisikan kelas Barang, yang memiliki properti nama, pengirim, penerima, berat, tujuan, dan next. Properti next ini berguna untuk menghubungkan objek Barang pada Antrian. Dalam class ini terdapat sebuah constructor (init) yang akan dipanggil ketika objek dari class Barang dibuat.
+
+- Pada constructor, terdapat beberapa parameter yaitu nama, pengirim, penerima, berat, dan tujuan yang akan digunakan untuk menginisialisasi properti-properti objek Barang. Properti-properti tersebut adalah nama, pengirim, penerima, berat, tujuan, dan next.
+
+- Properti "nama" merepresentasikan nama dari barang yang akan dikirim. Properti "pengirim" merepresentasikan nama dari pengirim barang. Properti "penerima" merepresentasikan nama dari penerima barang. Properti "berat" merepresentasikan berat barang dalam satuan kilogram. Properti "tujuan" merepresentasikan alamat tujuan pengiriman barang. Properti "next" akan digunakan untuk menyimpan alamat dari objek Barang berikutnya (jika ada) pada linked list.
 
 ![class antrian](https://user-images.githubusercontent.com/94899238/225825280-9e642e7b-b9e7-4c05-b439-1d932fec612e.png)
-- Baris kode tersebut adalah untuk mendefinisikan kelas Antrian, yang memiliki properti head. Properti head ini menunjukkan elemen pertama dari antrian. Fungsi tambah_barang() digunakan untuk menambahkan objek Barang ke dalam Antrian. Jika Antrian masih kosong (head == None), maka objek Barang akan menjadi head. Jika tidak, objek Barang akan ditambahkan sebagai elemen terakhir dari Antrian.
+- Baris kode tersebut adalah untuk mendefinisikan kelas Antrian, yang memiliki properti head. Properti head ini menunjukkan elemen pertama dari antrian. Fungsi tambah_barang() digunakan untuk menambahkan objek Barang ke dalam Antrian. Jika Antrian masih kosong (head == None), maka objek Barang akan menjadi head. Jika tidak, objek Barang akan ditambahkan sebagai elemen terakhir dari Antrian. Metode ini memastikan bahwa setiap objek Barang yang ditambahkan ke antrian diposisikan di akhir dari antrian, sehingga ketika sebuah objek barang dihapus dari antrian, maka objek berikutnya akan menjadi elemen paling depan dari antrian.
 
 ![hapus barang](https://user-images.githubusercontent.com/94899238/225825511-35cbd3a1-cb67-40d7-b3da-bb6ba5146452.png)
 - Baris kode tersebut adalah untuk membuat fungsi hapus_barang(), yang digunakan untuk menghapus objek Barang dari Antrian berdasarkan nama. Jika Antrian masih kosong, maka akan ditampilkan pesan "Antrian kosong". Jika elemen pertama di Antrian memiliki nama yang sama dengan nama yang dihapus, maka elemen pertama akan dihapus. Jika tidak, maka Antrian akan diiterasi dari elemen kedua hingga elemen terakhir. Jika nama Barang ditemukan, maka Barang akan dihapus. Jika tidak, akan ditampilkan pesan "Barang tidak ditemukan".
