@@ -78,3 +78,13 @@ Program akan menampilkan menu dengan beberapa pilihan seperti tambah barang, hap
 Program ini menggunakan beberapa library yaitu time dan os. Library time digunakan untuk menambahkan delay pada program agar tampilan menu tidak terlalu cepat, sedangkan library os digunakan untuk membersihkan layar setelah user memilih suatu pilihan menu.
 
 # Output yang Dihasilkan
+
+![Screenshot 2023-03-17 142837](https://user-images.githubusercontent.com/94899238/225835641-fbd58e4c-37bd-40ff-b5c1-e6773b367867.png)
+- Gambar diatas merupakan tampilan awal dari program ini, berisikan pilihan-pilihan untuk menambah data barang antrian, menghapus data barang di antrian, melihat antrian, bahkan merubah data yang telah ada di antrian.
+
+![Screenshot 2023-03-17 143744](https://user-images.githubusercontent.com/94899238/225836794-d51ec004-b17b-4a0c-8348-af3ad8349984.png)
+- Jika pengguna (admin) menginput 1 atau pilihan pertama, maka program akan mengarahkan pengguna ke menu tambah data barang. Disini pengguna diminta untuk menginput data-data seputar barang tersebut, seperti Nama barang, nama pengirim, nama penerima, berat barang, serta tujuan pengiriman.
+
+![Screenshot 2023-03-17 144001](https://user-images.githubusercontent.com/94899238/225838027-d9158cc6-0a3b-410a-a76e-2ae6de24a0a8.png)
+- Jika pengguna (admin) menginput pilihan kedua, maka program akan mengarahkan ke menu menghapus data barang di antrian. Disini program menampilkan data barang yang sudah ada di antrian agar memudahkan admin memilih data mana yang perlu dihapus, untuk menghapus suatu data barang pengguna cukup menginput nama dari data yang sudah ada secara baik dan benar.
+
